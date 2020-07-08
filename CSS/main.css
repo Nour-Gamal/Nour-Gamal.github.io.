@@ -1,11 +1,12 @@
 *{
 box-sizing: border-box;
+font-family: 'Galada', cursive;
 }
 
 
 body{
 
-height: 3000px;
+height: 6000px;
 padding-top: 60px;
 background-color: #222222;
 }
@@ -177,8 +178,9 @@ color: #ffac41;
 
 .about{
 
-padding: 60px 0 ;
+padding: 65px 0 ;
 color:#ffac41
+
 }
 
 .about .h1{
@@ -559,6 +561,11 @@ color:#8BC24A;
 .ourteam{
 
 background: url(" ../Images/ourteam-background.gif") no-repeat center center fixed ;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
 width: 100%;
 color: #FFF;
 
@@ -589,9 +596,17 @@ overflow: hidden;
 .ourteam img{
 
 width: 50%;
-
+transition: all .4s ease;
 
 }
+.ourteam img:hover{
+
+    -webkit-transform:scale(1.1) ;
+    -moz-transform:scale(1.1) ;
+    -o-transform:scale(1.1) ;
+    transform: scale(1.1);
+    }
+    
 .ourteam h3{
 
  color:#ff1e56
@@ -605,4 +620,261 @@ margin-bottom: 40px;
 margin-left: 20px;
 
 }
+.ourteam .person i{
+font-size: 25px;
+margin: 10px;
+transition: all .3s ease-in-out; 
+cursor: pointer;
+}
+.ourteam .person i:hover{
+        
+ -webkit-transform:scale(1.5,1.5);
+
+ -moz-transform:scale(1.5,1.5);
+
+ -o-transform:scale(1.5,1.5);
+
+ transform:scale(1.5,1.5);
+
+}
+.ourteam .person i:first-of-type:hover{
+    
+   color: #3b5998;
+   }
+   
+
+   .ourteam .person i:nth-of-type(2):hover{
+    
+    color: #00acee ;
+    }
+   
+   .ourteam .person i:nth-of-type(3):hover{
+    
+      color: #c4302b ; 
+       }
+   
+        .ourteam .person i:nth-of-type(4):hover{
+    
+            color: #3cba54;
+        }
+           
+            
 /*End our team section*/
+
+/*Start contact us section*/
+
+.contactus{
+
+padding:40px 0;
+
+
+}
+
+.contactus h2{
+
+
+color: #ffac41;
+
+}
+
+.contactus p{
+
+
+    color: #ff1e56;
+    
+    }
+
+.contactus form input::placeholder{
+    text-align: center;
+
+    }
+
+
+ @media (max-width:767px){
+
+    .contactus form input{
+
+    margin-bottom: 20px;
+
+        }
+
+    }
+
+
+/*End contact us section*/
+
+
+/*Start statistics section*/
+
+.statistics{
+
+background-color: #000;
+padding-top: 40px;
+padding-bottom: 70px;
+color: rgb(192, 192, 192);
+}
+
+
+
+.statistics h2{
+
+
+color:#ffac41 ;
+
+}
+
+.statistics .stats{
+
+margin-top: 20px;
+margin-bottom: 20px;
+
+transition: all .4s ease-in-out;
+
+}
+.statistics .stats:hover{
+
+    color: #FFF;
+
+}
+
+
+.statistics .stats p{
+
+
+margin-top: 20px;
+margin-bottom: 0;
+font-size: 30px;
+font-weight: bold;
+
+}
+
+.statistics .stats span{
+
+font-size: 15px;
+}
+
+/*End statistics section*/
+
+/*Start skills section*/
+
+.skills{
+
+color: #FFF;
+margin: 40px 0;
+
+}
+.skills h2{
+
+color:#ffac41 ;
+margin-bottom: 60px;
+
+}
+.skills .skill-prog{
+
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+/*End skills section*/
+
+/*Start call  us section*/
+
+.callus{
+background: url('../Images/callus.jpg') no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+min-height: 500px;
+margin-top: 20px;
+margin-bottom: 20px;
+color: #FFF;
+}
+
+.callus .overlay{
+
+background-color: rgba(0, 0,0, .7);
+min-height: 500px;
+}
+
+.callus i.fa-headphones{
+
+    color: rgb(192, 192, 192);
+    margin-top: 20px;
+    
+    }
+    
+.callus h2{
+    color:#ffac41
+}
+
+.callus p{
+
+font-size: 25px;
+letter-spacing: 10px;
+color: #ff1e56;
+margin-bottom: 50px;
+
+
+}
+
+.callus input,.callus textarea{
+
+
+    background-color:rgba(82,78,78,.5) ;
+    color: #FFF;
+}
+
+
+.callus input,textarea::placeholder{
+
+
+text-align: center;
+line-height: 90px;
+
+}
+.callus textarea{
+
+height: 108px;
+resize: none;
+
+}
+
+
+/*End call us section*/
+
+/*Start our clients section*/
+.our-clients{
+
+background-color: #bdb9b9;
+margin-top: -20px;
+padding: 20px;
+
+}
+.our-clients h2{
+
+   padding-top: 20px;
+}
+
+.our-clients img{
+
+
+opacity: .3;
+
+transition: all .4s ease-in-out;
+
+}
+
+.our-clients img:hover{
+
+
+    opacity: 1;
+    
+    }
+    
+
+/*End our clients section*/
