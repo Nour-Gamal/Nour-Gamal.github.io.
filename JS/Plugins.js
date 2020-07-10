@@ -1,14 +1,38 @@
 $(document).ready(function(){
 
+/*Do nice scroll */
+$("html").niceScroll({
+    cursorcolor:"#ff1e56",
+    cursorwidth:"15px",
+    background:"rgba(20,20,20,0.3)",
+    cursorborder:"1px solid #ff1e56",
+    cursorborderradius:0
+  });  
+  // a world full of color!
+/*End scroll */
+
+
+
 /*Start toolBox Section*/
 
+  /*Showing and hiding toolbox */
 
-/*Showing and hiding toolbox */
+var flag=0;
 
 $('.gear-box').on('click',function(){
 
-$('.color-box').fadeToggle(500);
+ $('.color-box').fadeToggle(500);
 
+ if(flag==0){
+    $('.gear-box').css('opacity','1');
+    flag++;
+}
+ else{
+    $('.gear-box').css('opacity','.5');
+
+flag=0;
+
+}
 
 });
 
@@ -46,9 +70,10 @@ $(".loading-overlay").fadeOut(2000,function(){
 });
 });
 
-
-
 /*End Loading section */
+
+
+
 
 /*Start button up section */
 
@@ -70,5 +95,7 @@ $('.fa-chevron-up').on("click",function(){
 
 
 /*End button up section */
+
+
 
 });

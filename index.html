@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
 
@@ -18,31 +18,35 @@
 
         
         <link rel='stylesheet' href="CSS/bootstrap.css">
-        <link rel='stylesheet' href="CSS/fontawesome.min.css">
+        <link rel='stylesheet' href="CSS/fontawesome.min.css" type="text/mime">
         <link rel='stylesheet' href="CSS/main.css">
         <link rel='stylesheet' href="CSS/default-theme.css">
         <link rel='stylesheet' href="CSS/media.css">
+        <link rel='stylesheet' href="CSS/hover-min.css">
+        <link rel='stylesheet' href="CSS/animate.css">
+        
         <link rel='icon' href="Images/icon.jpg">
        
     </head>
     <body>
     
-      <!--Start loading section-->
-      <section class="loading-overlay">
-
+      <!--Start loading div section-->
+      <div class="loading-overlay">
         <div class="spinner">
           <div class="bounce1"></div>
           <div class="bounce2"></div>
           <div class="bounce3"></div>
         </div>
 
-      </section>
+      </div>
     
-      <!--End loading section-->
+      <!--End loading div section-->
 
     
       <!--Start toolBox Section-->
       <section class="option-box">
+        <i class="fa fa-cog fa-xl gear-box" ></i>
+    
         <div class="color-box text-center">
           <h4>Color option</h4>
           <ul class="list-unstyled"> 
@@ -53,20 +57,19 @@
           </ul>
         
         </div>
-        <i class="fa fa-cog fa-xl gear-box" ></i>
-    
+        
       </section>
 <!--End toolBox Section-->
 
 
-      <!--Start arrow up section-->
+      <!--Start arrow up  div section-->
 
-      <section class="arrow-up">
+      <div class="arrow-up">
         <i class="fa fa-chevron-up fa-xl" id='scroll-top' ></i>
     
-    </section>
+      </div>
       
-      <!--End arrow up section-->
+      <!--End arrow up div section-->
 
 
         <!--Start Navigation bar-->
@@ -82,7 +85,7 @@
                   <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="#">NOUR<span> INC.</span></a>
+                <a class="navbar-brand hvr-pulse" href="#">NOUR<span> INC.</span></a>
               </div>
           
 
@@ -93,7 +96,7 @@
                 <ul class="nav navbar-nav navbar-right">
                 
                   <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                  <li><a href="#">About</a></li>
+                  <li><a href="about.html">About </a></li>
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -105,7 +108,7 @@
                     </ul>
                   </li>
                  
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">FAQ</a></li>
                  
                   
                 </ul>
@@ -133,7 +136,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
-            <img src="Images/1.jpg " class=" center-block" alt="...">
+            <img src="Images/1.jpg " class=" center-block" alt="1.jpg">
             <div class="carousel-caption"> 
                 <h2 class="h1">Programming</h2>
                 <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only</p>
@@ -206,9 +209,9 @@
 
          <!--Start about section-->
 
-        <section class="about text-center">
+        <section class="about text-center wow bounceIn" data-wow-duration="5s" data-wow-delay="0s" data-wow-offset="0" data-wow-iteration="1">
             <div class="container">
-            <h2 class="h1">Meet our new Templata For NOUR INC.</h2>
+            <h1>Meet our new Templata For NOUR INC.</h1>
             <p class="lead"> Hello Let me introduce you my page created with all the love by <strong>Bootstrap</strong> 3.2.3</p>
             </div>
         </section>
@@ -279,7 +282,7 @@
           <div class="item active">
                 <div class="col-md-4 col-sm-12">
                 <div class="feat">
-                  <img src="Images/Testimonials/amina.jpg" class="img-responsive center-block img-circle">
+                  <img src="Images/Testimonials/amina.jpg" class="img-responsive center-block img-circle" alt="amina">
                
                   <h2>Amina Khalil</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fugit doloribus similique eaque, incidunt minima quidem sit, consequatur iste magnam ducimus ipsam ipsa modi. Nulla labore architecto soluta hic perferendis!</p>  
@@ -289,7 +292,7 @@
                 <div class="col-md-4 col-sm-6">
 
                 <div class="feat">
-                  <img src="Images/Testimonials/aser.jpg" class="img-responsive center-block img-circle">
+                  <img src="Images/Testimonials/aser.jpg" class="img-responsive center-block img-circle" alt="aser">
                
                   <h2>Aser Yassin</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fugit doloribus similique eaque, incidunt minima quidem sit, consequatur iste magnam ducimus ipsam ipsa modi. Nulla labore architecto soluta hic perferendis!</p>  
@@ -301,7 +304,7 @@
                 <div class="col-md-4 col-sm-6">
                
                   <div class="feat">
-                    <img src="Images/Testimonials/mariam.jpg" class="img-responsive center-block img-circle">
+                    <img src="Images/Testimonials/mariam.jpg" class="img-responsive center-block img-circle" alt="mariam">
              
                     <h2>Mariam Khoshit</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fugit doloribus similique eaque, incidunt minima quidem sit, consequatur iste magnam ducimus ipsam ipsa modi. Nulla labore architecto soluta hic perferendis!</p>  
@@ -317,7 +320,7 @@
             <div class="col-md-4 col-sm-12">
              
               <div class="feat">
-                <img src="Images/Testimonials/sharnouby.jpg" class="img-responsive center-block img-circle">
+                <img src="Images/Testimonials/sharnouby.jpg" class="img-responsive center-block img-circle" alt="sharnouby">
              
                 <h2>Sharnouby</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fugit doloribus similique eaque, incidunt minima quidem sit, consequatur iste magnam ducimus ipsam ipsa modi. Nulla labore architecto soluta hic perferendis!</p>  
@@ -327,7 +330,7 @@
        
             <div class="col-md-4 col-sm-6">
               <div class="feat">
-                <img src="Images/Testimonials/shereen.jpg" class="img-responsive center-block img-circle">
+                <img src="Images/Testimonials/shereen.jpg" class="img-responsive center-block img-circle" alt="shereen">
              
                 <h2>Shereen Reda</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fugit doloribus similique eaque, incidunt minima quidem sit, consequatur iste magnam ducimus ipsam ipsa modi. Nulla labore architecto soluta hic perferendis!</p>  
@@ -337,7 +340,7 @@
        
             <div class="col-md-4 col-sm-6">
               <div class="feat">
-                <img src="Images/Testimonials/hatem.jpg" class="img-responsive center-block img-circle">
+                <img src="Images/Testimonials/hatem.jpg" class="img-responsive center-block img-circle" alt="hatem">
              
                 <h2>Ahmed Hatem</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, fugit doloribus similique eaque, incidunt minima quidem sit, consequatur iste magnam ducimus ipsam ipsa modi. Nulla labore architecto soluta hic perferendis!</p>  
@@ -471,10 +474,9 @@
                           <!--end Ultimate section-->
                         
                  
+                </div>    
               </div>    
-            </div>    
-          </div>    
-        </div>    
+           
               
           </section>
       
@@ -487,7 +489,7 @@
                  <div class="row">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                       <div class="person">
-                            <img src="Images/Our team/Jena Karlis.jpg" class="img-responsive center-block img-circle">
+                            <img src="Images/Our team/Jena Karlis.jpg" class="img-responsive center-block img-circle" alt="jena">
                             <h3>Jena Karlis</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit praesentium consequatur enim corporis amet</p>
                             <i class="fab fa-facebook"></i>
@@ -500,7 +502,7 @@
                     
                     <div class="col-md-3 col-sm-6 col-xs-12">
                       <div class="person">
-                        <img src="Images/Our team/John Larson.jpg" class="img-responsive center-block img-circle">
+                        <img src="Images/Our team/John Larson.jpg" class="img-responsive center-block img-circle" alt="john">
                         <h3>John Larison</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit praesentium consequatur enim corporis amet</p>
                         <i class="fab fa-facebook"></i>
@@ -513,7 +515,7 @@
                     
                       <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="person">
-                          <img src="Images/Our team/Sara Wilsson.jpg" class="img-responsive center-block img-circle">
+                          <img src="Images/Our team/Sara Wilsson.jpg" class="img-responsive center-block img-circle" alt="sara">
                           <h3>Sara Wilsson</h3>
                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit praesentium consequatur enim corporis amet</p>
                           <i class="fab fa-facebook"></i>
@@ -525,7 +527,7 @@
                       </div>
                     <div class="col-md-3 col-sm-6 col-xs-12">
                       <div class="person">
-                        <img src="Images/Our team/Matt Brandon.jpg" class="img-responsive center-block img-circle">
+                        <img src="Images/Our team/Matt Brandon.jpg" class="img-responsive center-block img-circle" alt="Matt">
                         <h3>Matt Brandon</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sit praesentium consequatur enim corporis amet</p>
                         <i class="fab fa-facebook"></i>
@@ -622,18 +624,17 @@
              
                     <div class="skill-prog">
                       <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-success active " role="progressbar" aria-valuenow="80"     
-                                  aria-valuemin="0"aria-valuemax="100" style="width:80%">CSS/HTML</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">CSS/HTML</div>
                       
                       </div>                      
                       <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-danger active " role="progressbar" aria-valuenow="70"     
-                                  aria-valuemin="0"aria-valuemax="100" style="width:70%">JavaScript/jQuery</div>
+                                  aria-valuemin="0" aria-valuemax="100" style="width:70%">JavaScript/jQuery</div>
                       
                       </div>                      
                       <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-warning active " role="progressbar" aria-valuenow="90"     
-                                  aria-valuemin="0"aria-valuemax="100" style="width:90%">Bootstrap</div>
+                                  aria-valuemin="0" aria-valuemax="100" style="width:90%">Bootstrap</div>
                       
                       </div>                      
                       <div class="progress">
@@ -662,26 +663,27 @@
        <section class="our-clients text-center">
         <div class="container">
           <div class="row">
-          <h2 class="h1"> Our clients with all the proud </h2>
+         <h2 class="h1 col-lg-offset-3 col-lg-6 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 "> Our clients with all the proud </h2>
+          <div class="clearfix"></div>
           <ul class="list-unstyled">
             <li class="col-md-2 col-sm-4 col-xs-12">
-              <img src="Images/Our clients/maestro.png" class="img-responsive center-block">
+              <img src="Images/Our clients/maestro.png" class="img-responsive center-block" alt="maestro">
             </li>
             <li class="col-md-2 col-sm-4 col-xs-12">
-              <img src="Images/Our clients/payoneer.png" class="img-responsive center-block">
+              <img src="Images/Our clients/payoneer.png" class="img-responsive center-block" alt="payoneer" >
             </li>
             <li class="col-md-2 col-sm-4 col-xs-12">
-              <img src="Images/Our clients/ebay.png" class="img-responsive center-block">
+              <img src="Images/Our clients/ebay.png" class="img-responsive center-block" alt="ebay">
             </li>
             <li class="col-md-2 col-sm-4 col-xs-12">
-              <img src="Images/Our clients/amazon.png" class="img-responsive center-block">
+              <img src="Images/Our clients/amazon.png" class="img-responsive center-block" alt="amazon">
             </li>
             <li class="col-md-2 col-sm-4 col-xs-12">
-              <img src="Images/Our clients/hsbs.png"class="img-responsive center-block">
+              <img src="Images/Our clients/hsbs.png" class="img-responsive center-block" alt="hsbc">
          
             </li>
             <li class="col-md-2 col-sm-4 col-xs-12">
-              <img src="Images/Our clients/citybank.png" class="img-responsive center-block">
+              <img src="Images/Our clients/citybank.png" class="img-responsive center-block" alt="citybank">
         
             </li>
           </ul>
@@ -708,7 +710,7 @@
         
           <!--Start contact form-->
         
-               <form role="form">
+               <form >
                  <div class="col-md-6">
              <div class="form-group">
                 <input type="text" class="form-control input-lg" placeholder="username">
@@ -741,7 +743,7 @@
               </div> 
              </div>
 
-            </div>
+           
         </section>
  
         <!--End call us section-->
@@ -781,12 +783,12 @@
              </ul>
              
              <ul class="list-unstyled">
-                <li class=" col-md-4 col-xs-2 "><img src="Images/footer/iconfinder_Facebook_381389.png " > </li>
-                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_github_1107228.png" > </li>
-                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_instagram_287535.png"> </li>
-                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_linkedin_834713.png"></li>
-                <li class="col-md-4  col-xs-2 "><img src="Images/footer/iconfinder_social_media__vintage__pintrest__3047484.png"></li>
-                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_Twitter_381374.png"></li>
+                <li class=" col-md-4 col-xs-2 "><img src="Images/footer/iconfinder_Facebook_381389.png" alt="facebook" > </li>
+                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_github_1107228.png" alt="Github"> </li>
+                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_instagram_287535.png" alt="instagram" > </li>
+                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_linkedin_834713.png" alt="linkedin"></li>
+                <li class="col-md-4  col-xs-2 "><img src="Images/footer/iconfinder_social_media__vintage__pintrest__3047484.png" alt="pintrest"></li>
+                <li class="col-md-4  col-xs-2 "> <img src="Images/footer/iconfinder_Twitter_381374.png" alt="twitter"></li>
               </ul>
            <div class="clearfix"></div>
              
@@ -798,7 +800,7 @@
                 <h2>Latest Articles</h2>
                 <div class="media">
                   <a href="#" class="pull-left">
-                    <img class="madia-object" src="Images/footer/iconfinder_circle-edit-article_1495216.png">
+                    <img class="madia-object" src="Images/footer/iconfinder_circle-edit-article_1495216.png" alt="Articles">
                   </a>
                   <div class="media-body">
                     <h3>Programming</h3>
@@ -809,7 +811,7 @@
                
                 <div class="media">
                   <a href="#" class="pull-left">
-                    <img class="madia-object" src="Images/footer/iconfinder_circle-edit-article_1495216.png">
+                    <img class="madia-object" src="Images/footer/iconfinder_circle-edit-article_1495216.png" alt="Articles">
                   </a>
                   <div class="media-body">
                     <h3>Webhosting</h3>
@@ -827,19 +829,19 @@
               <div class="footing">
                 <h2>Our Projects</h2>
                 <div class="col-xs-3">
-                <img  src="Images/footer/Our projects/iconfinder_Android_2062063.png">
+                <img  src="Images/footer/Our projects/iconfinder_Android_2062063.png" alt="android">
                   </div>
                    <div class="col-xs-3">
          
-                        <img src="Images/footer/Our projects/iconfinder_cloud_531879.png">
+                        <img src="Images/footer/Our projects/iconfinder_cloud_531879.png" alt="cloud">
                    </div>
                    <div class="col-xs-3">
         
-                      <img src="Images/footer/Our projects/iconfinder_expand-color-web2-19_5049211.png">
+                      <img src="Images/footer/Our projects/iconfinder_expand-color-web2-19_5049211.png" alt="expand-color">
                     </div>
                     <div class="col-xs-3">
                   
-                      <img src="Images/footer/Our projects/iconfinder_keyboard_1287523.png">
+                      <img src="Images/footer/Our projects/iconfinder_keyboard_1287523.png" alt="keyboard">
                     </div>
                   </div>
                       </div>
@@ -861,6 +863,9 @@
         <script src="JS/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="JS/Plugins.js"></script>
+        <script src="JS/jquery.nicescroll.min.js"></script>
+        <script src="JS/wow.min.js"></script>
+        <script>new WOW().init();</script>
 
     </body> 
 </html>
