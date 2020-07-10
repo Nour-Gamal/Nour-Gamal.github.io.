@@ -2,10 +2,7 @@
 
 /*Global styles*/
 
-body{ padding-top: 60px; background-color: #222222; overflow: hidden;color: #FFF; scrollbar-width: none; }
-
-body::-webkit-scrollbar {display: none;  /* Safari and Chrome */}
-body::-moz-scrollbar {display: none;  /* mozzilaa */}
+body{ padding-top: 60px; background-color: #222222; overflow: hidden;color: #FFF;  }
 
 /**Secondary theme**/
 h1,.h1,h2,h3,.testimonials .feat img{color: #ffac41; border-color:#ffac41;}

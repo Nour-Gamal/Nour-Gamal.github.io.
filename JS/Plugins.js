@@ -1,16 +1,5 @@
 $(document).ready(function(){
 
-/*Do nice scroll */
-$("html").niceScroll({
-    cursorcolor:"#ff1e56",
-    cursorwidth:"15px",
-    background:"rgba(20,20,20,0.3)",
-    cursorborder:"1px solid #ff1e56",
-    cursorborderradius:0
-  });  
-  // a world full of color!
-/*End scroll */
-
 
 
 /*Start toolBox Section*/
