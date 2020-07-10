@@ -1,0 +1,65 @@
+/*Purple theme*/
+
+
+.option-box .gear-box ,.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus ,
+.dropdown-menu > li > a:hover ,.dropdown-menu .divider ,
+.carousel-indicators .active,.arrow-up i
+
+      
+
+{
+  
+  
+  
+    background-color:#844685 ;
+  
+}
+
+
+.navbar-header .navbar-brand span ,.about .lead,
+.features p , .testimonials .feat h2,.ourteam h3,
+.contactus p, .callus p , .footer .media-body h3,
+.copyright span
+
+
+{
+
+        color: #844685;
+        
+        
+     
+
+}
+
+ .dropdown-menu
+ 
+ {
+
+
+    border-top: 1px solid #844685;
+    
+  }
+
+
+     
+
+
+
+
+
+    
+   
+    
+    
+       
+    
+            
+           
+               
+
+    
+
+
+/*End Purple theme*/

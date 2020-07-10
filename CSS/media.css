@@ -1,0 +1,41 @@
+@media (max-width:767px){
+
+/*start navbar section*/
+
+
+
+ .navbar-nav > li > a{
+
+padding-top: 5px;
+padding-bottom: 5px;
+
+
+ }
+
+
+/*End navbar section*/
+
+    
+        
+
+}
+
+@media (min-width:768px ){
+
+
+
+}
+
+
+@media(min-width:792px){
+
+
+
+}
+
+@media(min-width:1200px){
+
+
+
+
+}

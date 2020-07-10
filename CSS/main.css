@@ -3,31 +3,155 @@ box-sizing: border-box;
 font-family: 'Galada', cursive;
 }
 
+/*Global styles*/
 
 body{
 
-height: 6000px;
 padding-top: 60px;
 background-color: #222222;
+overflow: hidden;
 }
+
+
+
+/*End Global styles*/
+
+
+
+/*Start loading section*/
+.loading-overlay{
+
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 999999999999;
+background-color: #3f3f3f;
+}
+.spinner {
+    margin: 300px auto 0;
+    width: 70px;
+    text-align: center;
+  }
+  
+  .spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #FFF;
+  
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  }
+  
+  .spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  
+  .spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+  
+  @-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% { -webkit-transform: scale(0) }
+    40% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 40% { 
+      -webkit-transform: scale(1.0);
+      transform: scale(1.0);
+    }
+  }
+
+
+
+
+
+/*End loading section*/
+
+
+/*Start toolBox Section*/
+.option-box{
+color:#FFF;
+position:fixed;
+top:80px;
+z-index: 9999999;
+padding: 10px;
+
+}
+
+
+
+.option-box .gear-box{
+    color: #FFF;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    }
+    
+.option-box .color-box{
+
+float: left;
+margin-right: 10px;
+padding: 10px;
+z-index:99999;
+display: none;
+background-color:rgba(0,0,0);
+border-radius: 30%;
+
+}
+
+
+.option-box .color-box ul li{
+
+    width:20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    }
+
+
+        
+
+/*End toolBox Section*/
+
+/*Start arrow up Section*/
+
+.arrow-up{
+
+position:fixed;
+bottom: 0;
+right: 0;
+margin-right: 10px;
+padding: 10px;
+float: right;
+z-index: 999999999;
+}
+
+.arrow-up i{
+
+color:#FFF;
+border-radius: 50%;
+padding: 10px;
+cursor: pointer;
+ 
+display: none;
+}
+
+/*End arrow up Section*/
 
 
 /*start navbar section*/
 
-
-.navbar-header .navbar-brand span{
-
-color: #ff1e56;
-
-
-}
-
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
- .navbar-inverse .navbar-nav > .active > a:focus {
-
-background-color: #ff1e56;
- }
 
 
  .navbar-inverse .navbar-nav > li > a{
@@ -51,7 +175,6 @@ color:#BBB;
 
 
 background-color:rgb(34,34,34) ;
-border-top: 1px solid #ff1e56;
 min-width: 200px;
 
  }
@@ -69,18 +192,11 @@ min-width: 200px;
  .dropdown-menu > li > a:hover
  {
  
-background-color: #ff1e56;
 color:#FFF;
 padding-left: 25px;
 } 
 
 
-
-.dropdown-menu .divider {
-
-    background-color: #ff1e56;
-
-}
 
 
 .navbar-right .dropdown-menu{
@@ -139,10 +255,10 @@ filter: blur(20px);
 }
 
 .carousel-caption {
-    bottom: 25px;
+    bottom: 23px;
     background-color: rgba(0, 0,0, .5);
     border-radius: 10px;   
-    padding-bottom: 5px;
+    
 }
 
 
@@ -166,8 +282,6 @@ color: #ffac41;
 
 
 .carousel-indicators .active {
-    
-    background-color:#ff1e56;
     width: 13px;
     height: 13px;
 }
@@ -191,11 +305,6 @@ color:#ffac41
 
 
 
-.about .lead{
-
-
-    color: #ff1e56;
-}
 
 
 
@@ -237,13 +346,6 @@ margin-top: 40px;
 
 
 
-.features p{
-
-
-color: #ff1e56;
-
-}
-
 
 
 /*End features section*/
@@ -254,12 +356,6 @@ color: #ff1e56;
 .testimonials h2{
     color:#ffac41 ;
 
-
-}
-
-.testimonials .feat h2{
-
-    color:#ff1e56 ;
 
 }
 
@@ -607,12 +703,7 @@ transition: all .4s ease;
     transform: scale(1.1);
     }
     
-.ourteam h3{
 
- color:#ff1e56
-
-
-}
 .ourteam .person{
 
 
@@ -677,12 +768,7 @@ color: #ffac41;
 
 }
 
-.contactus p{
 
-
-    color: #ff1e56;
-    
-    }
 
 .contactus form input::placeholder{
     text-align: center;
@@ -690,13 +776,11 @@ color: #ffac41;
     }
 
 
- @media (max-width:767px){
-
-    .contactus form input{
+    .contactus form input,.contactus form button {
 
     margin-bottom: 20px;
 
-        }
+        
 
     }
 
@@ -781,6 +865,39 @@ margin-bottom: 60px;
 
 /*End skills section*/
 
+/*Start our clients section*/
+.our-clients{
+
+    background-color: #bdb9b9;
+    margin-top: -20px;
+    padding: 20px;
+    
+    }
+    .our-clients h2{
+    
+       padding-top: 20px;
+    }
+    
+    .our-clients img{
+    
+    
+    opacity: .3;
+    
+    transition: all .4s ease-in-out;
+    
+    }
+    
+    .our-clients img:hover{
+    
+    
+        opacity: 1;
+        
+        }
+        
+    
+    /*End our clients section*/
+    
+
 /*Start call  us section*/
 
 .callus{
@@ -790,8 +907,6 @@ background: url('../Images/callus.jpg') no-repeat center center scroll;
 -o-background-size: cover;
 background-size: cover;
 min-height: 500px;
-margin-top: 20px;
-margin-bottom: 20px;
 color: #FFF;
 }
 
@@ -816,7 +931,6 @@ min-height: 500px;
 
 font-size: 25px;
 letter-spacing: 10px;
-color: #ff1e56;
 margin-bottom: 50px;
 
 
@@ -847,34 +961,86 @@ resize: none;
 
 /*End call us section*/
 
-/*Start our clients section*/
-.our-clients{
+/*Start footer  section*/
 
-background-color: #bdb9b9;
-margin-top: -20px;
-padding: 20px;
+.footer{
 
-}
-.our-clients h2{
-
-   padding-top: 20px;
+background: #000;
+color: #FFF;
+padding-top: 30px;
 }
 
-.our-clients img{
+
+.footer .footing{
+padding-bottom: 50px;
+}
+
+.footer .footing h2{
+    color:#ffac41;
+    letter-spacing: 2px;
+    margin-bottom:20px;
+}
+
+.footer .footing ul li{
+
+padding-bottom: 10px;
+font-size: 15px;
+letter-spacing: 1px;
+color: rgb(158, 157, 157);
+cursor: pointer;
+margin-left: -15px;
 
 
-opacity: .3;
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-o-transition: all .5s ease;
 
-transition: all .4s ease-in-out;
+transition: all .5s ease;
+
 
 }
 
-.our-clients img:hover{
+.footer .footing ul li:hover{
+
+color: #FFF;
+}
+
+.footer .footing ul  img{
+
+width: 40px;
+opacity: .5;
 
 
-    opacity: 1;
-    
-    }
-    
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-o-transition: all .5s ease;
 
-/*End our clients section*/
+transition: all .5s ease;
+
+}
+
+.footer .footing ul img:hover{
+opacity: 1;
+
+}
+.footer .media-body h3{
+
+margin-top: 0;
+
+}
+
+.footer .media-body p{
+    color: rgb(158, 157, 157);
+padding:0 10px 10px 10px;
+
+}
+
+.copyright{
+
+letter-spacing: 5px;
+font-size: 17px;
+padding-top: 20px;
+}
+
+
+/*End footer  section*/
